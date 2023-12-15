@@ -6,11 +6,12 @@ import sys
 def on_trackbar():
     pass
 
-img_color = cv2.imread("document.jpg", cv2.IMREAD_COLOR)
+img_color = cv2.imread("binary.jpeg", cv2.IMREAD_COLOR)
 if img_color is None:
     print("Error 1")
     sys.exit(1)
 
+cv2.imshow("original", img_color)
 img_gray = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)
 cv2.imshow("GrayScale", img_gray)
 

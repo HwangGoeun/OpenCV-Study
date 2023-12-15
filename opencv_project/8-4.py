@@ -30,4 +30,3 @@ while True:
     key = cv.waitKey(1)
     if key == 27:
         break
-
